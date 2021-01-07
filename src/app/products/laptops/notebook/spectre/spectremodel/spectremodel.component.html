@@ -1,0 +1,31 @@
+<nav class="navbar navbar-light" style="background-color: #dce6ec">
+  <span class="navbar-brand mb-0 h1">Welcome to the World of Laptops!</span>
+</nav>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="../products">Home</a></li>
+    <li class="breadcrumb-item"><a href="../../../laptops">Laptops</a></li>
+    <li class="breadcrumb-item">
+      <a href="../../../laptops">Notebook</a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">Spectre</li>
+  </ol>
+</nav>
+<ng-container *ngFor="let model of this.smodel; let i = index">
+  <div class="card text-center style">
+    <img
+      class="card-img-top images"
+      src="../../../../../assets/images/spectre.jpg"
+      alt="SpectreModel"
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{ model.name }}</h5>
+      <p class="card-text">
+        {{ model.startingPrice }}<br />
+        {{ model.description }}
+      </p>
+      <button class="btn btn-primary" (click)="onSave()">Save</button>
+    </div>
+  </div>
+  <div *ngIf="save"><app-saveform></app-saveform></div>
+</ng-container>

@@ -1,0 +1,40 @@
+<ng-container>
+  <div class="row">
+    <div
+      class="card-deck"
+      style="margin-top: 5em; width: 46em; margin-left: 17em"
+    >
+      <div class="card text-center">
+        <img
+          class="card-img-top images"
+          src="../../../../assets/images/notebook_thumbnail.jpg"
+          alt="NoteBook"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ laptops[0].name }}</h5>
+          <p class="card-text">
+            {{ laptops[0].startingPrice }}<br />
+            {{ laptops[0].description }}
+          </p>
+          <button (click)="onClick()" class="btn btn-primary">Details</button>
+        </div>
+      </div>
+      <div *ngIf="detailsClicked"><app-spectre></app-spectre></div>
+      <div class="card text-center">
+        <img
+          class="card-img-top images"
+          src="../../../../assets/images/ultrabook.jfif"
+          alt="UltraBook"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ laptops[1].name }}</h5>
+          <p class="card-text">
+            {{ laptops[1].startingPrice }}<br />
+            {{ laptops[1].description }}
+          </p>
+          <a href="" class="btn btn-primary">Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>

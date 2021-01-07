@@ -1,0 +1,40 @@
+<ng-container>
+  <div class="row">
+    <div
+      class="card-deck"
+      style="margin-top: 5em; width: 46em; margin-left: 17em"
+    >
+      <div class="card text-center">
+        <img
+          class="card-img-top images"
+          src="../../../assets/images/compaq.jpg"
+          alt="Compact"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ desktops[0].name }}</h5>
+          <p class="card-text">
+            {{ desktops[0].startingPrice }}<br />
+            {{ desktops[0].description }}
+          </p>
+          <button (click)="onClick()" class="btn btn-primary">Details</button>
+        </div>
+      </div>
+      <div *ngIf="detailsClicked"><app-elite></app-elite></div>
+      <div class="card text-center">
+        <img
+          class="card-img-top images"
+          src="../../../assets/images/tower.jfif"
+          alt="Tower"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ desktops[1].name }}</h5>
+          <p class="card-text">
+            {{ desktops[1].startingPrice }}<br />
+            {{ desktops[1].description }}
+          </p>
+          <a href="" class="btn btn-primary">Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>

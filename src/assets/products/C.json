@@ -1,0 +1,13 @@
+{
+	"subcategories": [
+		{
+			"id": "E",
+			"name": "Elite",
+			"url": "",
+			"categoryType": "series",
+			"description": "Elite series",
+			"startingPrice": "54,890"
+		}
+	],
+	"startingPrice": []
+}

@@ -1,0 +1,13 @@
+{
+	"subcategories": [
+		{
+			"id": "S1",
+			"name": "Spectre 1000",
+			"url": "",
+			"categoryType": "model",
+			"description": "Spectre Model 1000",
+			"startingPrice": "89,200"
+		}
+	],
+	"startingPrice": []
+}

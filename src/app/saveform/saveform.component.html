@@ -1,0 +1,31 @@
+<nav class="navbar navbar-light" style="background-color: #dce6ec">
+  <span class="navbar-brand mb-0 h1">Purchase your Product!</span>
+</nav>
+<form class="style" #saveForm="ngForm" (ngSubmit)="onSave(saveForm.form)">
+  Name :
+  <input
+    type="text"
+    class="form-control"
+    name="name"
+    placeholder="Enter Name"
+    #nameField="ngModel"
+    required
+    ngModel
+  />
+  <br />
+  <div *ngIf="nameField.touched && nameField.errors">
+    <div class="alert alert-danger" *ngIf="nameField.errors.required">
+      Please enter Name
+    </div>
+  </div>
+  Description :
+  <input
+    type="text"
+    class="form-control"
+    name="description"
+    placeholder="Enter description"
+    ngModel
+  />
+  <br />
+  <button class="btn btn-primary" [disabled]="!saveForm.valid">Submit</button>
+</form>

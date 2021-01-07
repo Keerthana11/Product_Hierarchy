@@ -1,0 +1,21 @@
+{
+	"subcategories": [
+		{
+			"id": "N",
+			"name": "Notebook",
+			"url": "",
+			"categoryType": "product",
+			"description": "Save Extra with no cost EMI",
+			"startingPrice": "64,990"
+		},
+		{
+			"id": "N",
+			"name": "Ultrabook",
+			"url": "",
+			"categoryType": "product",
+			"description": "Save Extra with no cost EMI",
+			"startingPrice": "76,350"
+		}
+	],
+	"startingPrice": []
+}

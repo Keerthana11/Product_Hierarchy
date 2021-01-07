@@ -1,0 +1,27 @@
+<nav class="navbar navbar-light" style="background-color: #dce6ec">
+  <span class="navbar-brand mb-0 h1">Welcome to the World of Laptops!</span>
+</nav>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="../products">Home</a></li>
+    <li class="breadcrumb-item"><a href="../../../laptops">Laptops</a></li>
+    <li class="breadcrumb-item"><a href="../../../laptops">Notebook</a></li>
+  </ol>
+</nav>
+<ng-container *ngFor="let spectre of this.spectre; let i = index">
+  <div class="card text-center style">
+    <img
+      class="card-img-top images"
+      src="../../../../../assets/images/spectre.jpg"
+      alt="Spectre"
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{ spectre.name }}</h5>
+      <p class="card-text">
+        {{ spectre.startingPrice }}<br />
+        {{ spectre.description }}
+      </p>
+      <button class="btn btn-primary" (click)="onClick()">Details</button>
+    </div>
+  </div>
+</ng-container>

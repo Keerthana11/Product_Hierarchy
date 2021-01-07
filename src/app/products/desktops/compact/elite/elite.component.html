@@ -1,0 +1,25 @@
+<nav class="navbar navbar-light" style="background-color: #dce6ec">
+  <span class="navbar-brand mb-0 h1">Welcome to the World of Laptops!</span>
+</nav>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="../products">Home</a></li>
+    <li class="breadcrumb-item"><a href="../../../desktops/">Desktops</a></li>
+    <li class="breadcrumb-item"><a href="../../../desktops/">Compact</a></li>
+  </ol>
+</nav>
+<div class="card text-center style">
+  <img
+    class="card-img-top images"
+    src="../../../../../assets/images/Desktop.jpg"
+    alt="Elite"
+  />
+  <div class="card-body">
+    <h5 class="card-title">{{ elite[0].name }}</h5>
+    <p class="card-text">
+      {{ elite[0].startingPrice }}<br />
+      {{ elite[0].description }}
+    </p>
+    <button (click)="onClick()" class="btn btn-primary">Details</button>
+  </div>
+</div>

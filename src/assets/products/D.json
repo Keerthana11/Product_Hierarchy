@@ -1,0 +1,21 @@
+{
+	"subcategories": [
+		{
+			"id": "E",
+			"name": "Compact",
+			"url": "",
+			"categoryType": "series",
+			"description": "Save Extra with no cost EMI",
+			"startingPrice": "54,670"
+		},
+		{
+			"id": "E",
+			"name": "Tower",
+			"url": "",
+			"categoryType": "series",
+			"description": "Save Extra with no cost EMI",
+			"startingPrice": "44,980"
+		}
+	],
+	"startingPrice": []
+}

@@ -1,0 +1,13 @@
+{
+	"subcategories": [
+		{
+			"id": "E1",
+			"name": "Elite 1000",
+			"url": "",
+			"categoryType": "model",
+			"description": "Elite Model 1000",
+			"startingPrice": "89,450"
+		}
+	],
+	"startingPrice": []
+}
